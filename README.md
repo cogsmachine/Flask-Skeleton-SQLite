@@ -10,13 +10,19 @@ The app is within a folder called application and utilizes a blueprint called "m
 
 To launch this app, follow these steps:
 
-1. Create a Dotfile with *SECRET_KEY = 'passphrase_of_your_choice'* or simply enter into the command line: *export SECRET_KEY = 'passphrase_of_your_choice'*
+1. Create a Dotfile with *SECRET_KEY='passphrase_of_your_choice'* or simply enter into the command line: *export SECRET_KEY='passphrase_of_your_choice'*
+
+    - In addition, set *FLASK_ENV='development'* and *FLASK_APP='run.py'* in the Dotfile or in the command line (with *export FLASK_ENV='development'* and *export FLASK_APP='run.py'*)
+    
+    
 2. Go to the config.py file and set your desired location / path for the database
 
     - 'sqlite:////path/to/db/name.db'
     
+
+3. In the command line: *pip install -r requirements.txt*
     
-3. In the command line (the directory that is specified in the path for the database):
+4. In the command line (within the directory that is specified for the path of the database):
 
     *flask db init*
     
@@ -24,17 +30,18 @@ To launch this app, follow these steps:
     
     *flask db upgrade*
     
-4. flask run or python run.py (in the directory with the run.py file)
-
-- if this doesn't work, specify: 
-
-    *flask run --host=0.0.0.0*
     
-5. Go to the IP address
+5. flask run or python run.py (in the directory with the run.py file)
 
-6. Enter a message and submit
+    - if this doesn't work, try: 
 
-7. Go to /messages/
+        *flask run --host=0.0.0.0*
+    
+6. Go to the IP address
+
+7. Enter a message and submit
+
+8. Go to /messages/
     - you can now see the message left by the user, which is saved to the SQLite database
 
 
