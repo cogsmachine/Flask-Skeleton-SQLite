@@ -16,7 +16,7 @@ To launch this app, follow these steps:
     - 'sqlite:////path/to/db/name.db'
     
     
-3. In the command line:
+3. In the command line (the directory that is specified in the path for the database):
 
     *flask db init*
     
@@ -24,7 +24,7 @@ To launch this app, follow these steps:
     
     *flask db upgrade*
     
-4. flask run or python run.py
+4. flask run or python run.py (in the directory with the run.py file)
 
 - if this doesn't work, specify: 
 
