@@ -8,12 +8,12 @@
 
 The app is within a folder called application and utilizes a blueprint called "main". You can create more blueprints by following the same structure as the folder called "home". Just be sure to load them into init.py file under app_context.
 
-To launch this app, follow these steps:
+To launch this app, follow these steps (check out the .txt file for easy copy-paste):
 
-1. Create a Dotfile with *SECRET_KEY='passphrase_of_your_choice'* or simply enter into the command line: *export SECRET_KEY='passphrase_of_your_choice'*
+1. Create a Dotfile called .env with *SECRET_KEY='passphrase_of_your_choice'* or simply enter into the command line: *export SECRET_KEY='passphrase_of_your_choice'*
 
-    - In addition, set *FLASK_ENV='development'* and *FLASK_APP='run.py'* in the Dotfile or in the command line (with *export FLASK_ENV='development'* and *export FLASK_APP='run.py'*)
-    
+    - In addition, set *FLASK_ENV='development'* and *FLASK_APP='run.py'* in the .env file or in the command line (with *export FLASK_ENV='development'* and *export FLASK_APP='run.py'*)
+
     
 2. Go to the config.py file and set your desired location / path for the database
 

@@ -1,0 +1,13 @@
+export SECRET_KEY='passphrase_of_your_choice'
+export FLASK_APP='run.py'
+export FLASK_ENV='development'
+
+pip install -r requirements.txt
+
+flask db init
+flask db migrate -m "Some message of choice"
+flask db upgrade
+
+flask run --host=0.0.0.0
+
+
